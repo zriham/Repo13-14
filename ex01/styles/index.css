@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-weight: 350;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: whitesmoke;
+}
+h6 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+.row {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin-right: 2rem;
+}
+
+.item {
+  width: 100%;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+img,
+#jogging,
+#cycling,
+#basketball,
+#skiing {
+  width: 100%;
+  height: 100%;
+}
+
+img,
+#jogging,
+#cycling,
+#basketball,
+
+#skiing {
+  object-fit: cover;
+}
+#skiing {
+  object-position: 0 -450px;
+}
+#jogging {
+  object-position: 0 -50px;
+}
+#cycling {
+  object-position: 0 -100px;
+}
+#basketball {
+  object-position: 0 -450px;
+}
+.black {
+  display: none;
+  position: absolute;
+  background-color: black;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  z-index: 100;
+}
+.title {
+  color: white;
+  position: relative;
+  font-style: arial;
+  font-size: 25px;
+  top: calc(100% - 3rem);
+  text-align: center;
+  cursor: pointer;
+}
+.modal {
+  display: none;
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+}
+iframe {
+  display: block;
+  margin: 10rem auto;
+  max-width: 800px;
+  width: 100%;
+  height: 100%;
+}
+.modal-img {
+  width: 100%;
+  height: 400px;
+}
+.modal-body h1 {
+  text-align: left;
+  color: #4d0dc4;
+  letter-spacing: 10px;
+  font-weight: 500;
+  }
+.modal-body p {
+  text-align: justify;
+ margin: 10px;
+  color: #0a9be4;
+}
